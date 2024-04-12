@@ -1,0 +1,23 @@
+@import "../../../scss/variables.scss";
+
+.button{
+    padding: 17px 26px;
+    font-size: 17.83px;
+    line-height: 26.74px;
+    border: none;
+    border-radius: 17.83px;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover{
+        filter: brightness(0.8)
+    }
+}
+
+.primary{
+    color: $text-color;    
+}
+.secondary{
+    background-color: $secondary-color;
+    color: $secondary-text-color;
+}

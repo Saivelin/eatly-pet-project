@@ -1,0 +1,57 @@
+@import "../../scss/variables.scss";
+
+.header{
+    padding: 10px 0;
+    margin: 48px 0 24px 0;
+
+    @media (max-width: $tablet) {
+        margin: 18px 0 12px 0;
+    }
+
+    .nav{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr max(0.8fr, 0.6fr);
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 1rem;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .navElements{
+            display: flex;
+            align-items: center;
+            column-gap: 3.2rem;
+
+            @media (max-width: $tablet) {
+                column-gap: 1rem;
+            }
+
+            .navItem{
+                color: $text-color;
+                font-weight: 500;
+            }
+        }
+
+        .btns{
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 8px;
+        }
+    }
+}
+
+.underline{
+    height: 1px;
+    width: 100%;
+    background-color: #CBCBCB;
+    display: block;
+}
