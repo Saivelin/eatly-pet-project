@@ -1,7 +1,5 @@
-import Image from "next/image";
+import MainModule from "@/modules/MainModule/MainModule";
 
 export default function Home() {
-  return (
-    <div>123</div>
-  );
+  return <MainModule/>;
 }

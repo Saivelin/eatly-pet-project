@@ -3,11 +3,11 @@ import styles from "./Button.module.scss"
 
 type ButtonsType = 'primary' | 'secondary'
 
-const Button = ({children, type} : {children: ReactNode, type: ButtonsType}) => {
+const Button = ({children, type, bordered=false} : {children: ReactNode, type: ButtonsType, bordered?: boolean}) => {
     return (
         <button
             className={
-                `${styles.button} ${styles[type]}`
+                `${styles.button} ${styles[type]} ${bordered ? styles[`${type}-bordered`] : ''}`
             }
         >
             {children}

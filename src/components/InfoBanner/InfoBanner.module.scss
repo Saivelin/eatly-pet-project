@@ -1,0 +1,28 @@
+@import "../../scss/variables.scss";
+
+.infoBanner{
+    display: flex;
+    justify-content: space-between;
+    padding: 4dvw 15dvw;
+
+    background-color: #5C4EAE;
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>h4{
+            font-size: 32px;
+            line-height: 38px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        &>p{
+            max-width: 70%;
+            color: #C5BFED;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}

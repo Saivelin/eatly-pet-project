@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10rem;
+    align-items: center;
+    padding: 5dvh 0 6dvh 0;
+
+    .image{
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.buttons{
+    display: flex;
+    column-gap: 12px;
+    margin-bottom: 24px;
+}
