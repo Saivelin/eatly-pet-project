@@ -4,7 +4,7 @@ import Container from '../ui/Container/Container'
 import styles from './Header.module.scss'
 import Link from 'next/link'
 import Button from '../ui/Button/Button'
-import Underline from './Underline'
+import Underline from '../Underline/Underline'
 
 const navItems = [
     { title: 'Menu', link: '/menu' },

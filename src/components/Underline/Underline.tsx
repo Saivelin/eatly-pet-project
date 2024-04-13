@@ -1,6 +1,6 @@
 'use client'
 
-import styles from './Header.module.scss'
+import styles from './Underline.module.scss'
 import { motion } from 'framer-motion'
 
 const Underline = () => {
