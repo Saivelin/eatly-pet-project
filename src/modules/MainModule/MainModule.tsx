@@ -7,6 +7,7 @@ import TopRestaurants from "@/components/TopRestaurants/TopRestaurants"
 import Container from "@/components/ui/Container/Container"
 import OurDishes from "@/components/OurDishes/OurDishes"
 import ControlPurchases from "@/components/ControlPurchases/ControlPurchases"
+import CustomersSay from "@/components/CustomersSay/CustomersSay"
 
 const MainModule = () => {
     return <main>
@@ -25,6 +26,10 @@ const MainModule = () => {
             <Underline/>
         </Container>
         <ControlPurchases data={DishesOrdered}/>
+        <Container>
+            <Underline/>
+        </Container>
+        <CustomersSay/>
     </main>
 }
 

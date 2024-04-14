@@ -1,0 +1,60 @@
+.container{
+    padding: 25px;
+    border: 2px solid #EDF2F7;
+    border-radius: 18px;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .info{
+            display: flex;
+            column-gap: max(1.2dvw, 18px);
+
+            &_content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .header{
+                    font-size: 18px;
+                    font-weight: 800;
+                    color: #1A202C;
+                    line-height: 28px;
+                }
+
+                .subtitle{
+                    font-size: 15px;
+                    line-height: 23px;
+                    color: #A0AEC0;
+                }
+            }
+        }
+
+        .cost{
+            font-size: 21px;
+            font-weight: 800;
+            line-height: 32px;
+        }
+    }
+
+    .scale{
+        width: 100%;
+        height: 10px;
+        background-color: rgb(108, 95, 188, 0.2);
+        border-radius: 78px;
+        z-index: 0;
+        position: relative;
+
+        .scaleInner{
+            border-radius: 78px;
+            background-color: rgb(108, 95, 188);
+            display: block;
+            position: relative;
+            z-index: 2;
+            opacity: 1;
+            height: 10px;
+        }
+    }
+}

@@ -1,16 +1,25 @@
-.container {
-    background-color: #fff;
-    padding: 2.2dvw 2.3dvw;
-    border-radius: 24px;
+.containerWrapper {
+    .container {
+        background-color: #fff;
+        padding: 2.2dvw 2.3dvw;
+        border-radius: 24px;
 
-    .head {
-        display: flex;
-        justify-content: space-between;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5dvw;
 
-        .header {
-            font-weight: 800;
-            font-size: 28px;
-            line-height: 38px;
+            .header {
+                font-weight: 800;
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+
+        .itemsWrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: max(20px, 1.5dvw);
         }
     }
 }
