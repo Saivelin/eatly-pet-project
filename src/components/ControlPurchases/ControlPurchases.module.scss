@@ -1,0 +1,27 @@
+@import "../../scss/mixins.scss";
+
+.container {
+    padding: 5vw 0 6dvw 0;
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    column-gap: 8dvw;
+
+    .content {
+        .header {
+            @include h2Header;
+            margin-bottom: 3dvw;
+        }
+
+        .dishesWrapper{
+            display: flex;
+            flex-direction: column;
+            row-gap: max(1dvw, 15px);
+
+            // &>:first-child{
+            //     position: relative;
+            //     z-index: 2;
+            //     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.374);
+            // }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 24dvw;
+    padding: 4px 16px;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+
+    .photo{
+        position: static !important;
+        display: block !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .content {
+
+        &>h5{
+            font-size: 19px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+
+        &>:nth-child(2){
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    .dateOfDeliver{
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        color: #ACADB9;
+        font-size: 13px;
+    }
+}

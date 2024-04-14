@@ -1,6 +1,6 @@
 import { BannerItemType } from "@/components/InfoBanner/InfoBanner";
 import { TagsDATA } from "@/components/RestaurantCardsWrapper/mockData";
-import { Dish } from "@/types/dishes";
+import { DeliverStatuses, Dish, DishOrder } from "@/types/dishes";
 
 export const InfoBannerDATA: BannerItemType[] = [
     {
@@ -62,5 +62,41 @@ export const OurDishesDATA: Dish[] = [
         rating: 5,
         cost: 24.99,
         photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg"
+    },
+]
+
+export const DishesOrdered: DishOrder[] = [
+    {
+        id: 1, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[0]],
+        time: 24 * 60,
+        rating: 4.9,
+        cost: 12.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        deliverStatus: DeliverStatuses.OnWay,
+        dateOfDeliver: "15:09"
+    },
+    {
+        id: 2, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[1], TagsDATA[0]],
+        time: 26 * 60,
+        rating: 4.7,
+        cost: 19.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        deliverStatus: DeliverStatuses.Delivered,
+        dateOfDeliver: "Yesterday"
+    },
+    {
+        id: 3, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[0]],
+        time: 153 * 60,
+        rating: 4.4,
+        cost: 11.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        deliverStatus: DeliverStatuses.Canceled,
+        dateOfDeliver: "Yesterday"
     },
 ]
