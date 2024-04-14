@@ -1,0 +1,16 @@
+.container {}
+
+.item {
+    min-height: 15rem;
+    padding: 40px;
+    min-width: 22rem;
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner_carousel {
+    display: flex;
+}
