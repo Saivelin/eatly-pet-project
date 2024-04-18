@@ -31,16 +31,16 @@ const OurDishes = ({ data }: { data: Dish[] }) => {
                         <path
                             d='M2 9.90186H17.8041'
                             stroke='#ACADB9'
-                            stroke-width='2.25773'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                            strokeWidth='2.25773'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                         />
                         <path
                             d='M9.90234 2L17.8044 9.90206L9.90234 17.8041'
                             stroke='#ACADB9'
-                            stroke-width='2.25773'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                            strokeWidth='2.25773'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                         />
                     </svg>
                 </p>

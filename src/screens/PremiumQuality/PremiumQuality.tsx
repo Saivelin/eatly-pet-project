@@ -46,16 +46,16 @@ const PremiumQuality = () => {
                         <path
                             d='M4.70605 10.0762H15.946'
                             stroke='white'
-                            stroke-width='1.6055'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                            strokeWidth='1.6055'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                         />
                         <path
                             d='M10.3242 4.4574L15.9442 10.0774L10.3242 15.6973'
                             stroke='white'
-                            stroke-width='1.6055'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                            strokeWidth='1.6055'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                         />
                     </svg>
                 </Button>

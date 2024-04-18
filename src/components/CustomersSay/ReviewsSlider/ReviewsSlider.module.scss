@@ -1,16 +1,69 @@
-.container {}
+// .container {}
 
-.item {
-    min-height: 15rem;
-    padding: 40px;
-    min-width: 22rem;
+// .item {
+//     min-height: 15rem;
+//     padding: 40px;
+//     min-width: 22rem;
+// }
+
+// .carousel {
+//     cursor: grab;
+//     overflow: hidden;
+// }
+
+// .inner_carousel {
+//     display: flex;
+// }
+
+// .container {
+//     .content {
+//         overflow: hidden;
+//         max-width: 100%;
+//         display: flex;
+//         column-gap: 40px;
+//         position: relative;
+
+//         .item {
+//             min-height: 239px;
+
+//             &_active {
+//                 &>* {
+//                     min-height: 328px;
+//                 }
+//             }
+//         }
+//     }
+
+//     .scrollBar {
+//         background-color: #6b5fbc21;
+//         width: max(10px, 100%);
+//         height: 11px;
+//         border-radius: 18px;
+//         .scroll{
+//             background-color: #6C5FBC;
+//             border-radius: 18px;
+//             height: 11px;
+//             position: relative;
+//         }
+//     }
+// }
+
+.swiperContainer {
+    position: relative;
+    height: 337px;
 }
 
-.carousel {
-    cursor: grab;
-    overflow: hidden;
-}
+.customScrollbar {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 46%;
+    height: 11px;
+    background-color: #6b5fbc23;
+    border-radius: 80px;
+    z-index: 2;
 
-.inner_carousel {
-    display: flex;
+    &>*{
+        background-color: #6b5fbc;
+    }
 }

@@ -1,0 +1,58 @@
+.container {
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 38px 43px;
+
+    .header {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .content {
+            align-items: center;
+            display: flex;
+            column-gap: 20px;
+
+            .photo {
+                max-width: 70px;
+                max-height: 70px;
+                border-radius: 70px;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                &>:first-child {
+                    color: #030314;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                }
+
+                &>:last-child {
+                    color: #5E5D5D;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .review{
+        font-weight: 400;
+        font-size: 18px;
+        color: #636363;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 39px;
+    }
+
+    .rating{
+        display: flex;
+        column-gap: 5px;
+        &>*{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
