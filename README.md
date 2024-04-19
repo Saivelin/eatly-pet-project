@@ -1,3 +1,7 @@
+### Design: 
+<a href="https://www.figma.com/file/jHDVsiVR8JBpkMsYehKCEj/Eatly?type=design&node-id=0-1&mode=design&t=1QdTXsHcrbX9Kbu2-0">https://www.figma.com/file/jHDVsiVR8JBpkMsYehKCEj/Eatly?type=design&node-id=0-1&mode=design&t=1QdTXsHcrbX9Kbu2-0</a>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

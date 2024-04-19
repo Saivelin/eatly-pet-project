@@ -10,3 +10,19 @@
         margin-bottom: 8dvh;
     }
 }
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8dvh;
+
+    &>:nth-child(1){
+        line-height: 48px;
+        margin-top: 0;
+        margin-bottom: 0;    
+    }
+    &>:nth-child(2){
+        align-self: flex-start;
+    }
+}

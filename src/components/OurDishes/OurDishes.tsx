@@ -4,13 +4,23 @@ import HighlightText from '../ui/HighlightText/HighlightText'
 import LoadingSpinner from '../ui/LoadingSpinner/LoadingSpinner'
 import DishesCard from '../DishesCard/DishesCard'
 import styles from './OurDishes.module.scss'
+import ViewAllButton from '../ui/ViewAllButton/ViewAllButton'
 
-const OurDishes = ({ data }: { data: Dish[] }) => {
+const OurDishes = ({ data, viewAllButtonTop = false }: { data: Dish[], viewAllButtonTop?: boolean }) => {
     return (
         <Container classNames={[styles.Wrapper]}>
-            <h2 className={styles.header}>
-                Our Top <HighlightText>Dishes</HighlightText>
-            </h2>
+            {viewAllButtonTop === true ? (
+                <div className={styles.head}>
+                    <h2 className={styles.header}>
+                        Our Top <HighlightText>Dishes</HighlightText>
+                    </h2>
+                    <ViewAllButton />
+                </div>
+            ) : (
+                <h2 className={styles.header}>
+                    Our Top <HighlightText>Dishes</HighlightText>
+                </h2>
+            )}
             <div className={styles.container}>
                 {data && data?.length && data?.length > 0 ? (
                     data.map((el, i) => <DishesCard item={el} />)
@@ -18,6 +28,7 @@ const OurDishes = ({ data }: { data: Dish[] }) => {
                     <LoadingSpinner />
                 )}
             </div>
+            {viewAllButtonTop === false ? 
             <div className={styles.viewAll}>
                 <p>
                     View All{' '}
@@ -45,6 +56,7 @@ const OurDishes = ({ data }: { data: Dish[] }) => {
                     </svg>
                 </p>
             </div>
+            : null}
         </Container>
     )
 }
