@@ -1,5 +1,5 @@
 .container{
-    margin-bottom: 15.6dvw;
+    margin-bottom: min(15.6dvw, 182px);
 
     .header{
         margin-top: 10dvh;

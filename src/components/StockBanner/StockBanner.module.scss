@@ -1,0 +1,53 @@
+@import "../../scss/variables.scss";
+
+.container{
+    background-color: $secondary-color;
+    border-radius: 3rem;
+    position: relative;
+    margin-bottom: min(10.8dvw, 156px);
+
+    .background{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .content{
+        padding: min(2.5dvw, 37px) min(4.5dvw, 62px);
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+
+        .header{
+            font-size: 70px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            color: $secondary-text-color;
+            line-height: 105px;
+            margin-bottom: 9px;
+        }
+
+        .inputWithBtn{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            opacity: .85;
+            border-radius: 14px;
+            justify-content: space-between;
+            padding: 5px;
+            max-width: 440px;
+        }
+    }
+
+    .image{
+        width: auto !important;
+        height: auto !important;
+        left: unset !important;
+        right: min(72px, 5dvw) !important;
+        top: 30% !important;
+        min-width: 200px !important;
+        min-height: 200px  !important;
+    }
+}
