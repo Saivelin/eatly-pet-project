@@ -1,0 +1,19 @@
+.container {
+    padding: min(2dvw, 32px) min(2.1dvw, 34px);
+    box-shadow: 5px 10px 28px rgba(0, 0, 0, 0.096);
+    border-radius: 28px;
+
+    .header {
+        font-family: "Poppins", sans-serif;
+        font-size: 21px;
+        line-height: 28px;
+        color: #323142;
+        font-weight: 600;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+}

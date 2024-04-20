@@ -4,10 +4,12 @@ import Container from "@/components/ui/Container/Container"
 import Underline from "@/components/Underline/Underline"
 import { OurDishesDATA } from "../MainModule/MainModul.constants"
 import FrequentlyQuestions from "@/screens/FrequentlyQuestions/FrequentlyQuestions"
+import SearchAnything from "@/screens/SearchAnything/SearchAnything"
 
 const MenuModule = () => {
   return (
     <main>
+        <SearchAnything/>
         <TopRestaurants viewAllButton={true}/>
         <Container>
             <Underline/>

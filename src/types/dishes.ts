@@ -1,3 +1,4 @@
+import { ReactNode } from "react"
 import { TagType } from "./restaurant"
 
 export enum DeliverStatuses {
@@ -26,4 +27,11 @@ export type DishOrder = {
     photo: string
     dateOfDeliver: string
     deliverStatus: DeliverStatuses
+}
+
+export type Category = {
+    id: number
+    title: string
+    icon: any | string
+    color: string
 }
