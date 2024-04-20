@@ -1,0 +1,21 @@
+@import "../../../scss/variables.scss";
+
+.container{
+    border: 2px solid $secondary-color;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .button{
+        padding: 21px 0;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        line-height: 29px;
+        color: #6C5FBC;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+}
