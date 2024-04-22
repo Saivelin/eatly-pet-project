@@ -6,7 +6,17 @@ import Tag from '../Tag/Tag'
 import Star from '../icons/Star'
 import Bookmark from '../icons/Bookmark'
 
-const RestaurantCard = ({ item }: { item: RestaurantCardType }) => {
+const RestaurantCard = ({
+    item,
+    classNames = [''],
+    inlineAbout = false,
+    withTags = true
+}: {
+    item: RestaurantCardType
+    classNames?: string[]
+    inlineAbout?: boolean
+    withTags?: boolean
+}) => {
     const getTime = useCallback(
         (time: number) => {
             let hours = 0
@@ -22,7 +32,11 @@ const RestaurantCard = ({ item }: { item: RestaurantCardType }) => {
     )
 
     return (
-        <div className={styles.container}>
+        <div
+            className={`${styles.container} ${classNames.map(el => {
+                return `${el} `
+            })}`}
+        >
             <div className={styles.photoWrapper}>
                 <Image
                     src={item.photo}
@@ -32,25 +46,42 @@ const RestaurantCard = ({ item }: { item: RestaurantCardType }) => {
                 />
             </div>
             <div className={styles.content}>
-                <div className={styles.tagsWrapper}>
-                    {item?.tags && item?.tags?.length && item?.tags?.length > 0
-                        ? item.tags.map(el => (
-                              <Tag
-                                  tag={el}
-                                  key={el.id}
-                              />
-                          ))
-                        : null}
-                </div>
-                <h3 className={styles.header}>{item.title}</h3>
-                <p className={styles.deliveryTime}>
-                    {getTime(item.deliveryDuration).hours > 0 ? (
-                        <span className={styles.hours}>{getTime(item.deliveryDuration).hours}hrs </span>
-                    ) : null}
-                    <span className={styles.mins}>{getTime(item.deliveryDuration).minutes}min • </span>
-                    <Star />
-                    <span className={styles.rating}> {item.rating}</span>
-                    <Bookmark/>
+                {withTags === true ? (
+                    <div className={styles.tagsWrapper}>
+                        {item?.tags && item?.tags?.length && item?.tags?.length > 0
+                            ? item.tags.map(el => (
+                                  <Tag
+                                      tag={el}
+                                      key={el.id}
+                                  />
+                              ))
+                            : null}
+                    </div>
+                ) : null}
+                {inlineAbout === false ? <h3 className={styles.header}>{item.title}</h3> : null}
+                <p className={`${styles.deliveryTime} ${inlineAbout === true ? styles.deliveryTime_inline : ''}`}>
+                    {inlineAbout === true ? <h3 className={styles.header}>{item.title}</h3> : null}
+                    {inlineAbout === true ? (
+                        <div className={styles.info}>
+                            {getTime(item.deliveryDuration).hours > 0 ? (
+                                <span className={styles.hours}>{getTime(item.deliveryDuration).hours}hrs </span>
+                            ) : null}
+                            <span className={styles.mins}>{getTime(item.deliveryDuration).minutes}min • </span>
+                            <Star />
+                            <span className={styles.rating}> {item.rating}</span>
+                        </div>
+                    ) : (
+                        <>
+                            {getTime(item.deliveryDuration).hours > 0 ? (
+                                <span className={styles.hours}>{getTime(item.deliveryDuration).hours}hrs </span>
+                            ) : null}
+                            <span className={styles.mins}>{getTime(item.deliveryDuration).minutes}min • </span>
+                            <Star />
+                            <span className={styles.rating}> {item.rating}</span>
+                        </>
+                    )}
+
+                    <Bookmark />
                 </p>
             </div>
         </div>

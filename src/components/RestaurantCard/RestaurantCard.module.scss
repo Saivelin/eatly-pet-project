@@ -48,5 +48,18 @@
                 align-items: center;
             }
         }
+
+        .deliveryTime_inline{
+            justify-content: space-between;
+
+            .info{
+                display: flex;
+                align-items: center;
+            }
+
+            &>:last-child{
+                margin-left: unset;
+            }
+        }
     }
 }

@@ -1,0 +1,19 @@
+.container{
+    .header{
+        font-size: 28px;
+        line-height: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #323142;
+        margin-bottom: min(4dvw, 60px);
+    }
+
+    .content{
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: repeat(5, 1fr);
+        &>*{
+            box-sizing: border-box;
+        }
+    }
+}

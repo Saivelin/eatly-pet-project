@@ -1,0 +1,13 @@
+.container{
+    margin-top: min(7dvw, 106px);
+    margin-bottom: min(7dvw, 106px);
+
+    &>*{
+        margin-bottom: min(10dvw, 145px);
+    }
+
+    .restaurantPreview{
+        grid-template-rows: 40dvh 1fr;
+        margin-bottom: min(7dvw, 106px);
+    }
+}

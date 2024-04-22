@@ -16,6 +16,26 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+
+        .searchWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 35px;
+            &>*{
+                width: 100%;
+            }
+
+            .search {
+                &>*{
+                    width: 100%;
+                }
+                background-color: #EDEDED;
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -31,17 +51,4 @@
     left: 20px;
     opacity: 1;
     z-index: -5;
-}
-
-.searchWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 35px;
-
-    .search {
-        background-color: #EDEDED;
-        width: 100%;
-    }
 }

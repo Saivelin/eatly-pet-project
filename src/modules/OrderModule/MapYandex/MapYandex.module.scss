@@ -1,0 +1,16 @@
+.map{
+    height: clamp(200px, 65dvh, 100dvh);
+    margin-top: min(5dvw, 80px);
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 30px 30px 100px rgba(0, 0, 0, 0.205);
+}
+
+.deliverInfo{
+    max-width: max(35%, 350px);
+    margin: 0 auto;
+    position: relative;
+    top: -10rem;
+    background-color: #fff;
+}
