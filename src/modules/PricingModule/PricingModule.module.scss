@@ -1,0 +1,30 @@
+.container {
+    .welcomeBlock {
+        position: relative;
+
+        .image{
+            position: relative !important;
+        }
+
+        .background {
+            background-color: #5C4EAE;
+            height: min(334px, 80dvh);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            padding-top: min(40px, 2.7dvw);
+            color: #F9F9F9;
+            font-family: "Poppins", sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -1%;
+            font-weight: 600;
+        }
+    }
+}

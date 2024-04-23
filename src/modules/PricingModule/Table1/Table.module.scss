@@ -1,0 +1,73 @@
+.container {
+    padding: min(55px, 3.8dvw) min(61px, 4.2dvw);
+    background-color: #fff;
+    box-shadow: 5px 5px 70px rgba(0, 0, 0, 0.153);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+
+        .fixedFeatures{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            &>p{
+                display: flex;
+            }
+        }
+
+        .rateMain {
+            .header {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 42px;
+                letter-spacing: -1%;
+                color: #282828;
+            }
+
+            .subtitle {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                print-color-adjust: 24px;
+                font-family: "Inter", sans-serif;
+                color: #6E757C;
+            }
+        }
+
+        .ratePricing {
+            .price {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 72px;
+                color: #272E35;
+                display: flex;
+
+                .priceCurrency {
+                    font-weight: 600;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 32px;
+                    font-size: 24px;
+                    color: #272E35;
+                    margin-top: 7px;
+                }
+
+                .priceInfo {
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: #6E757C;
+                    align-self: flex-end;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}
