@@ -1,6 +1,6 @@
 import { BannerItemType } from "@/components/InfoBanner/InfoBanner";
 import { TagsDATA } from "@/components/RestaurantCardsWrapper/mockData";
-import { DeliverStatuses, Dish, DishOrder } from "@/types/dishes";
+import { DeliverStatuses, Dish, DishCard, DishOrder } from "@/types/dishes";
 
 export const InfoBannerDATA: BannerItemType[] = [
     {
@@ -25,7 +25,7 @@ export const OurDishesDATA: Dish[] = [
         time: 24 * 60,
         rating: 4.9,
         cost: 12.99,
-        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg"
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
     },
     {
         id: 2, 
@@ -98,5 +98,38 @@ export const DishesOrdered: DishOrder[] = [
         photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
         deliverStatus: DeliverStatuses.Canceled,
         dateOfDeliver: "Yesterday"
+    },
+]
+
+export const DishesCart: DishCard[] = [
+    {
+        id: 1, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[0]],
+        time: 24 * 60,
+        rating: 4.9,
+        cost: 12.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        count: 3
+    },
+    {
+        id: 2, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[1], TagsDATA[0]],
+        time: 26 * 60,
+        rating: 4.7,
+        cost: 19.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        count: 2
+    },
+    {
+        id: 3, 
+        title: "Chicken Hell",
+        tags: [TagsDATA[0]],
+        time: 153 * 60,
+        rating: 4.4,
+        cost: 11.99,
+        photo: "https://optim.tildacdn.com/tild3566-3231-4330-a265-623530383665/-/cover/432x432/center/center/-/format/webp/Screenshot_3.jpg",
+        count: 3
     },
 ]

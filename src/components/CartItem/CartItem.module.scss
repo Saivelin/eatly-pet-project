@@ -1,0 +1,95 @@
+.container {
+    background-color: #fff;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.308);
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+    .photo {
+        border-radius: 12px;
+        position: static !important;
+        max-width: max(10%, 100px);
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px min(50px, 3dvw) 20px 13px;
+        width: 100%;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: #323142;
+            justify-content: space-around;
+
+            .title {
+                font-size: 22px;
+                line-height: 30px;
+            }
+
+            .cost {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .dynamic{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .count{
+                display: grid;
+                grid-template-columns: 1fr 35px 1fr;
+                column-gap: 8px;
+
+                &>span{
+                    font-family: "Poppins", sans-serif;
+                    size: 18px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #323142;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .summ{
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                color: #323142;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.btn {
+    border: 2px solid #323142;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &>* {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 13px;
+        width: 13px;
+    }
+
+    &_secondary {
+        background-color: #323142;
+    }
+}

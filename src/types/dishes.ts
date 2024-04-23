@@ -17,6 +17,17 @@ export type Dish = {
     photo: string
 }
 
+export type DishCart = {
+    id: number
+    title: string
+    tags: TagType[]
+    time: number
+    rating: number
+    cost: number
+    photo: string
+    count: number
+}
+
 export type DishOrder = {
     id: number
     title: string
